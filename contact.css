@@ -1,0 +1,392 @@
+:root
+{
+    --purple: #86A8E7;
+    --violet: #5FFBF1;
+    --pink: rgb(182, 244, 146);
+}
+*
+{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+body
+{
+    width: 100vw;
+    height: 100%;
+    margin: 0em;
+    overflow-x: hidden;
+    background-color:#161616;
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Helvetica Neue", Arial, sans-serif;
+    opacity: 0;
+    transition: opacity 1s;
+}
+.nav
+{
+    width: 100%;
+    height: 10vh;
+    z-index: 3;
+    display: grid;
+    justify-content: right;
+    font-size: 16px;
+}
+.nav-links
+{
+    display: flex;
+    list-style: none;
+    gap: 2.5rem;
+    font-size: 1.2rem;
+    padding: 0 50px 0 0;
+    margin: 1.5rem 0 0 0;
+}
+.nav-links a
+{
+    text-decoration: none;
+    color: #fff;
+}
+.nav-item
+{
+    position: relative;
+    height: fit-content;
+}
+.nav-resume
+{
+    position: relative;
+    opacity: 0.3;
+    transition: linear 0.2s; 
+}
+.nav-resume:hover
+{
+    opacity: 1;
+}
+.active-nav
+{
+    height: 3px;
+    background: #fff;
+    opacity: 0.5;
+    border-radius: 1rem;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+}
+.container
+{
+	width: 100%;
+	min-height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 30px 8%;
+    padding-top: 0;
+	padding-bottom: 0px;
+}
+.container .row
+{
+	display: flex;
+	justify-content: space-between;
+	width: 100%;
+	max-width: 1100px;
+}
+.row section.col
+{
+	display: flex;
+	flex-direction: column;
+}
+.row section.left
+{
+	flex-basis: 35%;
+	min-width: 320px;
+	margin-right: 60px;
+}
+.row section.right
+{
+	flex-basis: 60%;
+}
+section.left .contactTitle h2
+{
+	position: relative;
+	font-size: 28px;
+	color: #ddd;
+	display: inline-block;
+	margin-bottom: 25px;
+}
+section.left .contactTitle h2::before
+{
+	content: '';
+	position: absolute;
+	width: 50%;
+	height: 1px;
+	background-color: #888;
+	top: 120%;
+	left: 0;
+}
+section.left .contactTitle h2::after
+{
+	content: '';
+	position: absolute;
+	width: 25%;
+	height: 3px;
+	background-color: dodgerblue;
+	top: calc(120% - 1px);
+	left: 0;
+}
+section.left .contactTitle p
+{
+	font-size: 17px;
+	color: #ccc;
+	letter-spacing: 1px;
+	line-height: 1.2;
+	padding-bottom: 22px;
+}
+.contactInfo .iconGroup
+{
+	display: flex;
+	align-items: center;
+	margin: 25px 0px;
+}
+.iconGroup .icon
+{
+	width: 45px;
+	height: 45px;
+	border: 2px solid dodgerblue;
+	border-radius: 50%;
+	margin-right: 20px;
+	position: relative;
+}
+.iconGroup .icon i
+{
+	font-size: 20px;
+	color: #ddd;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+.iconGroup .details span
+{
+	display: block;
+	color: #888;
+	font-size: 18px;
+}
+.iconGroup .details span:nth-child(1)
+{
+	text-transform: uppercase;
+	color: #ccc;
+}
+section.left .socialMedia
+{
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+	flex-wrap: wrap;
+	margin: 22px 0px 20px;
+}
+.socialMedia a
+{
+	width: 35px;
+	height: 35px;
+	text-decoration: none;
+	text-align: center;
+	margin-right: 15px;
+	border-radius: 5px;
+	background-color: dodgerblue;
+	transition: 0.4s;
+}
+.socialMedia a i
+{
+	color: #ddd;
+	font-size: 18px;
+	line-height: 35px;
+	border: 1px solid transparent;
+	transition-delay: 0.4s;
+}
+.socialMedia a:hover
+{
+	transform: translateY(-5px);
+	background-color: #2e2e2e;
+	color: dodgerblue;
+	border: 1px solid dodgerblue;
+}
+.socialMedia a:hover i
+{
+	color: dodgerblue;
+}
+
+.row section.right .messageForm
+{
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+	padding-top: 30px;
+}
+.row section.right .inputGroup
+{
+	margin: 18px 0px;
+	position: relative;
+}
+.messageForm .halfWidth
+{
+	flex-basis: 48%;
+}
+.messageForm .fullWidth
+{
+	flex-basis: 100%;
+}
+.messageForm input, .messageForm textarea
+{
+	width: 100%;
+	font-size: 18px;
+	padding: 2px 0px;
+	background-color: #161616;
+	color: #ddd;
+	border: none;
+	border-bottom: 2px solid #666;
+	outline: none;
+}
+.messageForm textarea
+{
+	resize: none;
+	height: 220px;
+	display: block;
+}
+textarea::-webkit-scrollbar
+{
+	width: 5px;
+}
+textarea::-webkit-scrollbar-track
+{
+	background-color: #1e1e1e;
+	border-radius: 15px;
+}
+textarea::-webkit-scrollbar-thumb
+{
+	background-color: dodgerblue;
+	border-radius: 15px;
+}
+.inputGroup label
+{
+	position: absolute;
+	left: 0;
+	bottom: 4px;
+	color: #888;
+	font-size: 18px;
+	transition: 0.4s;
+	pointer-events: none;
+}
+.inputGroup:nth-child(4) label
+{
+	top: 2px;
+}
+.inputGroup input:focus ~ label, .inputGroup textarea:focus ~ label,
+.inputGroup input:valid ~ label, .inputGroup textarea:valid ~ label
+{
+	transform: translateY(-30px);
+	font-size: 16px;
+}
+.inputGroup button
+{
+	padding: 8px 16px;
+	font-size: 18px;
+	background-color: dodgerblue;
+	color: #ddd;
+	border: 1px solid transparent;
+	border-radius: 25px;
+	outline: none;
+	cursor: pointer;
+	box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.3);
+	transition: 0.4s;
+}
+.inputGroup button:hover
+{
+	background-color: #2e2e2e;
+	color: dodgerblue;
+	box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.3);
+	border: 1px solid dodgerblue;
+}
+@media(max-width: 1100px)
+{
+	.messageForm .halfWidth{
+		flex-basis: 100%;
+	}
+}
+@media(max-width: 900px)
+{
+	.container .row{
+		flex-wrap: wrap;
+	}
+	.row section.left, .row section.right{
+		flex-basis: 100%;
+		margin: 0px;
+	}
+}
+.hidden
+{
+    opacity: 0;
+    filter: blur(5px);
+    transform: translateX(-50%);
+    transition: all 1.7s;
+}
+.hidden-right
+{
+    opacity: 0;
+    filter: blur(5px);
+    transform: translateX(50%);
+    transition: all 1.7s;
+}
+.show
+{
+    opacity: 1;
+    filter: blur(0);
+    transform: translateX(0);
+}
+.unselectable
+{
+    -webkit-user-drag: none;
+    user-select: none;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+}
+@media(prefers-reduced-motion)
+{
+    .hidden
+    {
+        transition: none;
+    }
+}
+@keyframes rotate 
+{
+    from
+    {
+        transform: rotate(0deg);
+    }
+    to
+    {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes background-pan
+{
+    from
+    {
+        background-position: 0% center;
+    }
+    to
+    {
+        background-position: -200% center;
+    }
+}
+
+@keyframes scale
+{
+    from, to
+    {
+        transform: scale(0);
+    }
+
+    50% 
+    {
+        transform: scale(0.3);
+    }   
+}
