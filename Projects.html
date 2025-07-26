@@ -12,6 +12,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <script src="https://kit.fontawesome.com/a349a9ae75.js" crossorigin="anonymous"> </script>
     <link rel=stylesheet href="https://s3-us-west-2.amazonaws.com/colors-css/2.2.0/colors.min.css">
+    <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="Projects.css">
     <title>Shim Manaloto</title>
     <link rel="icon" type="image/x-icon" href="/images/Logo-white.png">
@@ -96,7 +97,87 @@
                 <h1> Projects </h1>
             </div>
 
-            <div class="project-card hidden">
+            <div class="project hidden">
+                <div class="project-info">
+                    <h1> Bad Apple </h1>
+                    <img class="custom-icon" src="svgs/asm2.svg">
+                    <p> 
+                        Anemoia is a modern Nintendo Entertainment System (NES) emulator, written in C++.
+                        It aims to provide a performant and modern-looking emulator while ensuring a user-friendly
+                        experience for users. This emulator is inspired by the open-source Nintendo Switch emulator,
+                        Ryujinx.
+                    </p>
+                </div>
+                <div class="img">
+                    <img src="images/BadApple.png" class="unselectable" draggable="false">
+
+                    <div class="links"> 
+                        <a href="https://www.youtube.com/watch?v=DpyAgNdl6oA" target="_blank"> Video <i class="fa-brands fa-youtube" style="color: #ffffff;"></i> </a>
+                        <a href="https://github.com/Shim06/PandesalCPU/tree/bad-apple" target="_blank"> Github <i class="fa-brands fa-github" style="color: #ffffff;"></i> </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="project hidden-right">
+                <div class="img">
+                    <img src="images/PandesalEmu.png" class="unselectable" draggable="false">
+
+                    <div class="links"> 
+                        <a href="https://github.com/Shim06/PandesalEmu" target="_blank"> Github <i class="fa-brands fa-github" style="color: #ffffff;"></i> </a>
+                    </div>
+                </div>
+
+                <div class="project-info">
+                    <h1> PandesalEmu </h1>
+                    <img class="custom-icon" src="svgs/c++2.svg">
+                    <p> 
+                        PandesalEmu is an emulator for the Pandesal CPU, an 8-bit processor inspired 
+                        by the MOS 6502. This is a CLI-based program that will execute Pandesal binary programs.
+                    </p>
+                </div>
+            </div>
+
+            <div class="project hidden">
+                <div class="project-info">
+                    <h1> PandesalAssembler </h1>
+                    <img class="custom-icon" src="svgs/c2.svg">
+                    <p> 
+                        Anemoia is a modern Nintendo Entertainment System (NES) emulator, written in C++.
+                        It aims to provide a performant and modern-looking emulator while ensuring a user-friendly
+                        experience for users. This emulator is inspired by the open-source Nintendo Switch emulator,
+                        Ryujinx.
+                    </p>
+                </div>
+                <div class="img">
+                    <img src="images/PandesalAssembler.png" class="unselectable" draggable="false">
+
+                    <div class="links"> 
+                        <a href="https://github.com/Shim06/PandesalAssembler" target="_blank"> Github <i class="fa-brands fa-github" style="color: #ffffff;"></i> </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="project hidden-right">
+                <div class="img">
+                    <img src="images/PandesalCPU.png" class="unselectable" draggable="false">
+
+                    <div class="links"> 
+                        <a href="https://github.com/Shim06/PandesalCPU" target="_blank"> Github <i class="fa-brands fa-github" style="color: #ffffff;"></i> </a>
+                    </div>
+                </div>
+
+                <div class="project-info">
+                    <h1> PandesalCPU </h1>
+                    <img class="custom-icon" src="svgs/c++2.svg">
+                    <p> 
+                        Pandesal CPU is an 8-bit multi-cycle general-purpose CPU architecture 
+                        inspired by the classic MOS 6502. Built at the logic-gate level and 
+                        implemented in Logisim Evo.
+                    </p>
+                </div>
+            </div>
+
+            <div class="project hidden">
                 <div class="project-info">
                     <h1> Anemoia </h1>
                     <img class="custom-icon" src="svgs/c++2.svg">
@@ -111,12 +192,13 @@
                     <img src="images/Anemoia.png" class="unselectable" draggable="false">
 
                     <div class="links"> 
+                        <a href="https://www.youtube.com/watch?v=11Q_xzh7rNs" target="_blank"> Video <i class="fa-brands fa-youtube" style="color: #ffffff;"></i> </a>
                         <a href="https://github.com/Shim06/Anemoia" target="_blank"> Github <i class="fa-brands fa-github" style="color: #ffffff;"></i> </a>
                     </div>
                 </div>
             </div>
 
-            <div class="project-card hidden-right">
+            <div class="project hidden-right">
                 <div class="img">
                     <img src="images/Raycasting-Engine.png" class="unselectable" draggable="false">
 
@@ -136,7 +218,7 @@
                 </div>
             </div>
 
-            <div class="project-card hidden">
+            <div class="project hidden">
                 <div class="project-info">
                     <h1> FRAS </h1>
                     <i class="fa-brands fa-python" style="color: #ffffff;"></i>
@@ -153,7 +235,7 @@
                 </div>
             </div>
 
-            <div class="project-card hidden-right">
+            <div class="project hidden-right">
                 <div class="img">
                     <img src="images/nibbelium.png" class="unselectable" draggable="false">
 
@@ -173,7 +255,7 @@
                 </div>
             </div>
 
-            <div class="project-card hidden">
+            <div class="project hidden">
                 <div class="project-info">
                     <h1> Terraria Fishing Bot </h1>
                     <i class="fa-brands fa-python" style="color: #ffffff;"></i>
@@ -189,13 +271,13 @@
                     <img src="images/Terraria-Fishing-Bot.png" class="unselectable" draggable="false">
 
                     <div class="links"> 
-                        <a href="https://www.youtube.com/watch?v=3O7fUQtceeI&t=3s" target="_blank"> Video <i class="fa-brands fa-youtube" style="color: #ffffff;"></i> </a>
+                        <a href="https://www.youtube.com/watch?v=3O7fUQtceeI" target="_blank"> Video <i class="fa-brands fa-youtube" style="color: #ffffff;"></i> </a>
                         <a href="https://github.com/Shim06/Terraria-Fishing-Bot" target="_blank"> Github <i class="fa-brands fa-github" style="color: #ffffff;"></i> </a>
                     </div>
                 </div>
             </div>
 
-            <div class="project-card hidden-right">
+            <div class="project hidden-right">
                 <div class="img">
                     <img src="images/pong but jojo.png" class="unselectable" draggable="false">
 
@@ -217,7 +299,7 @@
                 </div>
             </div>
 
-            <div class="project-card hidden">
+            <div class="project hidden">
                 <div class="project-info">
                     <h1> NieR:Automata Quotes </h1>
                     <i class="fa-brands fa-html5" style="color: #ffffff;"></i>
@@ -237,7 +319,7 @@
                 </div>
             </div>
 
-            <div class="project-card hidden-right">
+            <div class="project hidden-right">
                 <div class="img">
                     <img src="images/japan.jpg" class="unselectable" draggable="false">
                     
