@@ -27,6 +27,7 @@
     width: 42.96875vw;
     transition: linear 0.25s;
     position: absolute;
+    object-fit: cover;
 }
 .project > .img:hover img
 {
