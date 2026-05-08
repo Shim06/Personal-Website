@@ -53,7 +53,7 @@ body
 {
     position: relative;
     opacity: 0.3;
-    transition: linear 0.2s; 
+    transition: linear 0.2s;
 }
 .nav-resume:hover
 {
@@ -354,7 +354,7 @@ textarea::-webkit-scrollbar-thumb
         transition: none;
     }
 }
-@keyframes rotate 
+@keyframes rotate
 {
     from
     {
@@ -385,8 +385,8 @@ textarea::-webkit-scrollbar-thumb
         transform: scale(0);
     }
 
-    50% 
+    50%
     {
         transform: scale(0.3);
-    }   
+    }
 }

@@ -11,7 +11,7 @@ const cards = document.querySelectorAll(".card");
 const hiddenElements = document.querySelectorAll('.hidden');
 let trackActive
 
-const observer = new IntersectionObserver((entries) => 
+const observer = new IntersectionObserver((entries) =>
 {
     entries.forEach((entry) => {
         if (entry.isIntersecting)
@@ -23,7 +23,7 @@ const observer = new IntersectionObserver((entries) =>
 
 hiddenElements.forEach((el) => observer.observe(el));
 
-links.forEach((link) => 
+links.forEach((link) =>
 {
     link.addEventListener("click", (e) =>
     {
@@ -33,7 +33,7 @@ links.forEach((link) =>
         if(document.activeElement === e.target)
         {
             gsap.to(link, {opacity: 1});
-        } 
+        }
 
         const state = Flip.getState(activeNav);
         link.appendChild(activeNav)
@@ -168,7 +168,7 @@ let index = 0;
 const rand = (min, max) =>
     Math.floor(Math.random() * (max - min + 1)) + min;
 
-const animate = star => 
+const animate = star =>
 {
     star.style.setProperty("--star-left", `${rand(-10, 100)}%`);
     star.style.setProperty("--star-top", `${rand(-40, 60)}%`);
@@ -183,5 +183,5 @@ for(const star of document.getElementsByClassName("magic-star"))
     setTimeout(() => {
         animate(star)
         setInterval(() => animate(star), 1000);
-    }, index++ * (interval / 3)) 
+    }, index++ * (interval / 3))
 }

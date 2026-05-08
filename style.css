@@ -67,7 +67,7 @@ body
 {
     position: relative;
     opacity: 0.3;
-    transition: linear 0.2s; 
+    transition: linear 0.2s;
 }
 .nav-resume:hover
 {
@@ -174,7 +174,7 @@ body
 {
     display: flex;
     align-items: center;
-    justify-content: space-between; 
+    justify-content: space-between;
     margin-top: 6.25vw;
     margin-bottom: 1.875vw;
 }
@@ -250,7 +250,7 @@ body
 {
     display: flex;
     align-items: center;
-    justify-content: space-between; 
+    justify-content: space-between;
     margin-top: 1.875vw;
     margin-bottom: 1.875vw;
 }
@@ -407,7 +407,7 @@ body
 .skills-language img
 {
     margin-bottom: 1.25vw;
-}   
+}
 .skills-language h1
 {
     background-image: linear-gradient(
@@ -861,7 +861,7 @@ body
     padding-left: 20px;
     margin-left: 0px;
     }
-    .page-footer-media 
+    .page-footer-media
     {
     width: 100%;
     text-align: center;
@@ -871,7 +871,7 @@ body
     display: none;
     }
     .page-footer-media ul a
-    { 
+    {
     height: 36px;
     width: 36px;
     box-shadow:  0 0 0 1px;
@@ -913,7 +913,7 @@ body
     padding-left: 20px;
     margin-left: 0px;
     }
-    .page-footer-media 
+    .page-footer-media
     {
     width: 100%;
     text-align: center;
@@ -923,7 +923,7 @@ body
     display: none;
     }
     .page-footer-media ul a
-    { 
+    {
     height: 36px;
     width: 36px;
     box-shadow:  0 0 0 1px;
@@ -939,7 +939,7 @@ body
         transition: none;
     }
 }
-@keyframes rotate 
+@keyframes rotate
 {
     from
     {
@@ -970,15 +970,15 @@ body
         transform: scale(0);
     }
 
-    50% 
+    50%
     {
         transform: scale(0.3);
-    }   
+    }
 }
 
-@media (max-width: 600px) 
+@media (max-width: 600px)
 {
-    .project-cards 
+    .project-cards
     {
         grid-template-columns: 1fr;
     }
