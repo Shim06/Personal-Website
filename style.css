@@ -811,6 +811,13 @@ body
         height: fit-content;
 
     }
+    .project-header h1,
+    .imagesgallery-header h1,
+    .skills h1,
+    .about-me h1
+    {
+        font-size: 32px;
+    }
     .header > .text
     {
         width: 100%;
