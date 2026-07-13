@@ -159,6 +159,12 @@ body
     text-align: justify;
     width: 90%;
 }
+.project-header-title
+{
+    display: flex;
+    align-items: stretch;
+    gap: 1.25vw;
+}
 .container
 {
     margin-left: 3.90625vw;
@@ -166,8 +172,17 @@ body
     padding-left: 3.90625vw;
     padding-right: 3.90625vw;
 }
+.section-block
+{
+    margin-bottom: 5vw;
+}
+.section-block:last-child
+{
+    margin-bottom: 0;
+}
 .imagesgallery-header h1
 {
+    font-size: 3.90625vw;
     color: #E6E6E6;
 }
 .imagesgallery-header
@@ -177,6 +192,12 @@ body
     justify-content: space-between;
     margin-top: 6.25vw;
     margin-bottom: 1.875vw;
+}
+.imagesgallery-header-title
+{
+    display: flex;
+    align-items: stretch;
+    gap: 1.25vw;
 }
 .imagesgallery-header a
 {
@@ -244,6 +265,7 @@ body
 }
 .project-header h1
 {
+    font-size: 3.90625vw;
     color: #E6E6E6;
 }
 .project-header
@@ -373,8 +395,14 @@ body
 }
 .skills h1
 {
+    font-size: 3.90625vw;
     color: #E6E6E6;
-    margin-top: 2.5vw;
+}
+.skills-title
+{
+    display: flex;
+    align-items: stretch;
+    gap: 1.25vw;
 }
 .skills-images img
 {
@@ -419,9 +447,111 @@ body
     background-clip: text;
     margin-top: 0em;
 }
-.about-me h1
+.sponsors-title-block
+{
+    display: flex;
+    gap: 1.25vw;
+    margin-top: 2.5vw;
+}
+.sponsors-line
+{
+    width: 2px;
+    background: rgb(255 255 255 / 15%);
+    flex-shrink: 0;
+}
+.sponsors-text
+{
+    display: flex;
+    flex-direction: column;
+}
+.sponsors-header h1
 {
     color: #E6E6E6;
+    font-weight: 700;
+    font-size: 3.90625vw;
+}
+.sponsors-description
+{
+    color: #E6E6E6;
+    opacity: 0.7;
+    font-size: 1.25vw;
+    margin-top: 0.625vw;
+    max-width: 40vw;
+}
+.sponsor-cards
+{
+    padding: 1.875vw 0 1.875vw 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.2vw;
+}
+.header-line
+{
+    width: 2px;
+    background: rgb(255 255 255 / 15%);
+    flex-shrink: 0;
+    align-self: stretch;
+}
+.sponsor-card
+{
+    display: block;
+    text-decoration: none;
+    width: 27.515625vw;
+    height: 14.0625vw;
+    position: relative;
+    background-color: rgb(27 27 27);
+    border: 1px solid rgb(255 255 255 / 5%);
+    border-radius: 0.625vw;
+    padding: 1.875vw;
+}
+.sponsor-card::after
+{
+    background: linear-gradient(transparent, mediumslateblue, transparent);
+    height: 6.640625vw;
+    width: 1.5px;
+    position: absolute;
+    left: -1px;
+    top: 55%;
+    content: "";
+    opacity: 0;
+}
+.sponsor-card:hover::after
+{
+    transition: top 600ms ease, opacity 600ms ease;
+    top: 25%;
+    opacity: 1;
+}
+.sponsor-card-content
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+    background-position: 50% 50%;
+    background-size: 1.35vw 1.35vw;
+}
+.sponsor-logo
+{
+    height: 2.5vw;
+    width: auto;
+    margin-bottom: 1.25vw;
+}
+.sponsor-card-content p
+{
+    color: #E6E6E6;
+    opacity: 0.7;
+    font-size: 1.1vw;
+}
+.about-me h1
+{
+    font-size: 3.90625vw;
+    color: #E6E6E6;
+}
+.about-me-title
+{
+    display: flex;
+    align-items: stretch;
+    gap: 1.25vw;
     margin-bottom: 1.875vw;
 }
 .about-me p
@@ -697,6 +827,7 @@ body
     {
         margin-top: 20vw;
     }
+    .section-block { margin-bottom: 60px; }
     .project-header a
     {
         font-size: 18px;
@@ -774,6 +905,14 @@ body
         display: grid;
         margin-bottom: 20px;
     }
+    .header-line { width: 3px; }
+    .sponsors-title-block { margin-top: 15vw; }
+    .sponsors-line { width: 3px; }
+    .sponsors-header h1 { font-size: 32px; }
+    .sponsors-description { font-size: 20px; max-width: 100%; }
+    .sponsor-cards { display: grid; }
+    .sponsor-card { width: 100%; height: fit-content; border-radius: 10px; margin-bottom: 1.8rem; }
+    .sponsor-logo { height: 40px; }
     .about-me p
     {
         font-size: 20px;
